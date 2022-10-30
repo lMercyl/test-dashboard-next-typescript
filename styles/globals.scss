@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.main-container {
+  width: 86%;
+}
+
+:root {
+  --color-text: #434141;
+  --color-placeholder: rgba(0, 0, 0, 0.5);
+  --color-additional: #93b1ff;
+  --color-additional7: rgba(147, 177, 255, 0.7);
+  --background-color-calendar: #ededed;
+  --background-color-calendar-header: #ffffff;
+  --images-arrow: url("../assets/images/arrow.svg");
+}
+
+:root {
+  --color-text: #434141;
+  --color-placeholder: rgba(0, 0, 0, 0.5);
+  --color-additional: rgb(100, 188, 255);
+  --color-additional7: rgba(100, 188, 255, 0.7);
+  --background-color-calendar: #ededed;
+  --background-color-calendar-header: rgb(136, 202, 252);
+  --images-arrow: url("../assets/images/arrow-white.svg");
+}
+
+:root {
+  --color-text: #ffffff;
+  --color-placeholder: rgba(255, 255, 255, 0.5);
+  --color-additional: #93b1ff;
+  --color-additional7: rgba(147, 177, 255, 0.7);
+  --background-color-calendar: #3a3e42;
+  --background-color-calendar-header: #575c63;
+  --images-arrow: url("../assets/images/arrow.svg");
+}

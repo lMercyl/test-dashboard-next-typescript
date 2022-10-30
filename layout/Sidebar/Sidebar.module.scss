@@ -1,0 +1,53 @@
+.container {
+  width: 14%;
+  height: 100vh;
+  background-color: #003b72;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+
+  div {
+    padding: 19px 20px;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 14px 20px;
+        transition: background-color 0.1s ease-in-out;
+
+        &:hover {
+          background-color: #ffffff;
+          border-left: 2.5px #7761ff solid;
+          padding-left: 17.5px;
+        }
+
+        &:hover path {
+          fill: #7761ff;
+        }
+
+        &:hover a {
+          color: #7761ff;
+        }
+
+        a {
+          color: #ffffff;
+          transition: color 0.1s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.buttonContainer {
+  padding: 0 20px;
+}

@@ -1,0 +1,151 @@
+.calendar {
+  width: 573px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: #ebe7ff;
+}
+
+.calendarHeader {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  background-color: #7761ff;
+  color: #ffffff;
+  padding: 22px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendarHeaderArrowLeft {
+  width: 7.5px;
+  height: 14px;
+  margin-right: 35px;
+  cursor: pointer;
+  background-image: var(--images-arrow);
+  background-repeat: no-repeat;
+}
+
+.calendarHeaderArrowRight {
+  width: 7.5px;
+  height: 14px;
+  margin-left: 35px;
+  cursor: pointer;
+  background-image: var(--images-arrow);
+  transform: rotate(-180deg);
+  background-repeat: no-repeat;
+}
+
+.calendarBody {
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+}
+
+.calendarWeekNames {
+  height: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px 1px;
+}
+
+.calendarDays {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: center;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.calendarDay {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 11px 5px 35px 11px;
+  font-size: 20px;
+  font-weight: 400;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+
+  p {
+    margin: 0 !important;
+  }
+
+  &:hover {
+    background-color: #7661ff50;
+  }
+}
+
+.calendarAddDay {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 15px -1px 11px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #ebe7ff;
+}
+
+.calendarPickItem {
+  padding: 32px 0px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+
+  &:hover {
+    padding: 30.5px 0;
+    border: 1.5px #50caff solid;
+  }
+}
+
+.calendaTodayItem {
+  background-color: #00000028;
+}
+
+.calendarSelectedItem {
+  background-color: #7761ff;
+}
+.calendarPickItemsContainer {
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.calendarUnchooseableYear {
+  font-weight: 400;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-placeholder);
+}
+
+.active {
+  padding: 2px 7px;
+  color: #ffffff !important;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  background: #50caff;
+  border-radius: 50%;
+}
