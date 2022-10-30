@@ -1,5 +1,4 @@
 {
-  "homepage": "https://lmercyl.github.io",
   "name": "test-dashboard-next-typescript",
   "version": "0.1.0",
   "private": true,
@@ -7,14 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
     "axios": "^1.1.3",
-    "gh-pages": "^4.0.0",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -8,8 +8,11 @@ import {
   NavItemTests,
   NavImageProfile,
 } from '../../components/NavImage';
+import Link from 'next/link';
 
 const Sidebar = () => {
+  
+
   return (
     <aside className={styles.container}>
       <div>
@@ -19,7 +22,7 @@ const Sidebar = () => {
         <ul>
           <li>
             <NavImageProfile />
-            <a href="">Профиль</a>
+            <Link href="/profile">Профиль</Link>
           </li>
           <li>
             <NavItemCompany />
